@@ -4,9 +4,6 @@ import plotly.express as px
 import matplotlib.pyplot as plt
 from PIL import Image
 import datetime
-
-%%writefile app.py
-
 import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
