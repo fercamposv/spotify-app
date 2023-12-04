@@ -87,17 +87,6 @@ def pagina_inicio():
     texto = "Spotify es una plataforma de streaming de música líder que ofrece a los usuarios acceso a una amplia biblioteca de millones de canciones. Fundada en 2006, permite descubrir, reproducir y compartir música de manera personalizada. Ofrece una versión gratuita con anuncios y una suscripción premium sin anuncios con funciones adicionales. Destaca por su algoritmo de recomendación, funciones sociales, y contenido exclusivo como podcasts y sesiones en vivo. Con presencia global, Spotify ha redefinido la forma en que las personas disfrutan de la música, proporcionando una experiencia musical accesible y personalizada."
     st.write(texto)
 
-# def create_kpi_col():
-    #     col1, col2, col3 = st.columns(3)
-    #     col1.metric(
-    #         "Average RoBERTa Compound Score",
-    #         df_rbp_filt_title_1["roberta_compound"].mean(),
-    #     )
-    #     col2.metric("Average Stars Rating", df_rbp_filt_title_1["review_score"].mean())
-    #     col3.metric("another metric", 3)
-
-    # create_kpi_col()
-
 
     st.header("Canciones Más Populares en el Mundo")
 
@@ -227,36 +216,6 @@ def explorar_por_pais():
 
 
 
-
-    #grafica barras
-
-    #selected_song = st.selectbox("Selecciona una canción:", df["title"].unique())
-
-    # Filtrar datos según la canción seleccionada
-    #df_selected_song = df[df["title"] == selected_song]
-
-    # Verificar si hay datos seleccionados
-    #if not df_selected_song.empty:
-        # Crear un gráfico de barras horizontales
-        #fig = px.bar(df_selected_song, x=["bpm", "dnce", "val"],
-                   # y=[selected_song] * 3,
-                  #  orientation='h',
-                  #  labels={"value": "Valor", "variable": "Propiedad"},
-                   # title=f"Propiedades de la Canción: {selected_song}",
-                   # hover_data=["title", "artist"])
-
-        # Configurar diseño y estilo del gráfico
-        #fig.update_layout(
-           # yaxis_title="",
-           # xaxis_title="Valor",
-           # hovermode="x",
-      #  )
-
-        # Mostrar el gráfico en Streamlit
-       # st.plotly_chart(fig)
-    #else:
-      #  st.info("No hay datos disponibles para la canción seleccionada.")
-
     #PIECHART
 
     st.header("Géneros más escuchados")
@@ -347,22 +306,6 @@ def top_global():
     fig = px.scatter_geo(df_sorted, locations='country', size='pop', animation_frame="year", title=f'Mapa de Popularidad por País ({selected_genre})', locationmode='country names',projection='natural earth', size_max=40,color_discrete_sequence=['green'],width=900, height=550)
     fig.update_geos(projection_scale=3)
     st.plotly_chart(fig, use_container_width=True)
-
-
-
-##GRAFICA BIPARTITAS
-
-
-    #fig = px.parallel_categories(df["title"], df["artist"],df["top genre"],df["country"], color="pop")
-
-    # Configurar diseño y estilo del gráfico
-   # fig.update_layout(
-   #     title="Gráfico de Categoría Paralela",
-   #     height=500
-   # )
-
-    # Mostrar el gráfico en Streamlit
-  #  st.plotly_chart(fig)
 
 
 def glosario():
