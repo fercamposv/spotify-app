@@ -1,7 +1,4 @@
 
-git add app.py top50contry.csv
-
-
 st.set_page_config(layout="wide")
 
 scaler = MinMaxScaler(feature_range=(0, 100))
