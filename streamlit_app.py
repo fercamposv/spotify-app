@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import datetime
 import requests
-from sklearn.preprocessing import MinMaxScaler
 from PIL import Image
 
 st.set_page_config(layout="wide")
