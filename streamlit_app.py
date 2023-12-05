@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import datetime
-import geopandas as gpd
 import folium
 import requests
 from streamlit_option_menu import option_menu
