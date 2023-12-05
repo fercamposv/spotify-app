@@ -1,7 +1,15 @@
 import streamlit as st
 import pandas as pd
+import plotly.graph_objects as go
+import plotly.express as px
+import matplotlib.pyplot as plt
 import datetime
+import geopandas as gpd
+import folium
 import requests
+from streamlit_option_menu import option_menu
+from streamlit_folium import folium_static
+from sklearn.preprocessing import MinMaxScaler
 from PIL import Image
 
 st.set_page_config(layout="wide")
