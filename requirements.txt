@@ -1,8 +1,10 @@
-geopandas
-plotly
-streamlit
-plotly-express
-folium
-plotly
-streamlit_folium
-streamlit_option_menu
+!pip install geopandas
+!pip install plotly
+!pip install -q streamlit
+!pip install plotly-express --upgrade
+!pip install folium
+!pip install --upgrade plotly streamlit
+!pip install --upgrade streamlit
+!pip install plotly folium
+!pip install streamlit_folium
+!pip install streamlit_option_menu
