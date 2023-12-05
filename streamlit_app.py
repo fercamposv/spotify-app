@@ -1,14 +1,6 @@
-pip install geopandas
-pip install plotly
-pip install -q streamlit
-pip install plotly-express --upgrade
-pip install folium
-pip install --upgrade plotly streamlit
-pip install --upgrade streamlit
-pip install plotly folium
-pip install streamlit_folium
-pip install streamlit_option_menu
-
+git add requirements.txt
+git commit -m "Añadir requirements.txt"
+git push origin master
 
 import streamlit as st
 import pandas as pd
