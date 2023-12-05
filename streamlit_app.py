@@ -1,4 +1,4 @@
-pip install streamlit pandas plotly matplotlib datetime geopandas folium requests scikit-learn
+pip install -r requirements.txt
 
 st.set_page_config(layout="wide")
 
