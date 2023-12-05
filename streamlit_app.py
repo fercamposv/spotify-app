@@ -2,8 +2,6 @@ import streamlit as st
 import pandas as pd
 import datetime
 import requests
-from streamlit_option_menu import option_menu
-from streamlit_folium import folium_static
 from sklearn.preprocessing import MinMaxScaler
 from PIL import Image
 
