@@ -1,7 +1,3 @@
-git add requirements.txt
-git commit -m "Añadir requirements.txt"
-git push origin master
-
 import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
