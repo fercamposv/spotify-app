@@ -1,22 +1,7 @@
-import pandas as pd
-import numpy as np
-import plotly.express as px
-import matplotlib.pyplot as plt
-from PIL import Image
-import datetime
-import streamlit as st
-import pandas as pd
-import plotly.graph_objects as go
-import plotly.express as px
-import matplotlib.pyplot as plt
-import datetime
-import geopandas as gpd
-import folium
-import requests
-from streamlit_option_menu import option_menu
-from streamlit_folium import folium_static
-from sklearn.preprocessing import MinMaxScaler
-from PIL import Image
+pip install -r requirements.txt
+
+git add app.py top50contry.csv
+
 
 st.set_page_config(layout="wide")
 
