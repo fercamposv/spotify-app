@@ -1,0 +1,13 @@
+geopandas
+plotly
+streamlit
+plotly-express>=0.5.0
+folium
+streamlit_folium
+streamlit_option_menu
+
+pandas>=1.0.0
+numpy>=1.18.0
+plotly>=4.0.0
+matplotlib>=3.0.0
+Pillow>=6.0.0
